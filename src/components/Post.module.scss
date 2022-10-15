@@ -69,3 +69,54 @@
     }
   }
 }
+
+.commentForm {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-600);
+
+  > strong {
+    line-height: 1.6;
+    color: var(--gray-100);
+  }
+
+  textarea {
+    width: 100%;
+    background: var(--gray-900);
+    border: 0;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    margin-top: 1rem;
+    line-height: 1.4;
+  }
+
+  footer {
+    visibility: hidden;
+    max-height: 0;
+  }
+
+  &:focus-within footer {
+    visibility: visible;
+    max-height: none;
+  }
+
+  button[type="submit"] {
+    padding: 1rem 1.5rem;
+    background: var(--green-500);
+    color: var(--white);
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
+
+    &:hover {
+      background: var(--green-300);
+    }
+  }
+}
