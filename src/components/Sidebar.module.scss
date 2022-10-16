@@ -3,6 +3,10 @@
   border-radius: 8px;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    width: 300px;
+  }
+
   footer {
     border-top: 1px solid var(--gray-600);
     margin-top: 1.5rem;
