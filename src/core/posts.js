@@ -4,7 +4,7 @@ export const posts = [
     author: {
       avatarUrl: "https://github.com/danielVFS.png",
       name: "Daniel Vitor",
-      role: "Dev Frontend @Amazon",
+      role: "Dev Frontend at @Amazon",
     },
     content: [
       { type: "paragraph", content: "Fala galera 👋" },
@@ -22,7 +22,7 @@ export const posts = [
     author: {
       avatarUrl: "https://github.com/danielVFS.png",
       name: "Vitor Daniel",
-      role: "UX Designer @Google",
+      role: "UX Designer at @Google",
     },
     content: [
       { type: "paragraph", content: "Fala galera 👋" },
