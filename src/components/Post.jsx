@@ -22,7 +22,7 @@ export function Post({ author, content, publishedAt }) {
     addSuffix: true,
   });
 
-  function handleCreateNewComment() {
+  function handleCreateNewComment(event) {
     event.preventDefault();
     const newComment = event.target.comment.value;
     setComments([...comments, newComment]);
