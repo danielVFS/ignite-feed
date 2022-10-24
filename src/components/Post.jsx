@@ -33,8 +33,11 @@ export function Post({ author, content, publishedAt }) {
     setNewCommentText("");
   }
 
-  function deleteComment(comment) {
-    console.log(`deletar commentario ${comment}`);
+  function deleteComment(commentToDelete) {
+    const commentsWithoutDeletedOne = comments.filter(
+      (comment) => comment !== commentToDelete
+    );
+    setComments(commentsWithoutDeletedOne);
   }
 
   return (
